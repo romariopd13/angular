@@ -1,0 +1,76 @@
+<section class="property-binding">
+  <!-- <article>
+    <h3>Interpolation / Interpolação</h3>
+    <p>String renderizada com interpolação: {{url}}</p>
+    <p>Resultado de 1 + 1 é: {{1 + 1}}</p>
+    <p>Resultado de 1 + 1 não é: {{1 + 1 + getValor()}}</p>
+    <p>Curso de Angular e gosto do curso: {{cursoAngular && getCurtirCurso()}}</p>
+  </article>
+  <article>
+    <h3>Property Binding</h3>
+    <img src="{{urlImage}}">
+    <br>
+    <img [src]="urlImage">
+  </article> -->
+  <!-- <article>
+    <h3>Class e Style Binding</h3>
+    <div>
+      Selecione uma Classe:
+      <select #classe (change)="0">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Alerta</option>
+        <option value="alert-danger">Erro</option>
+      </select>
+      <br><br>
+      <div class="alert {{classe.value}}" role="alert">
+        Texto colorido conforme o valor do combobox
+      </div>
+      <div class="alert" role="alert" [class.alert-success]="classe.value == 'alert-success'">Sucesso</div>
+      <div class="alert" role="alert" [class.alert-info]="classe.value == 'alert-info'">Info</div>
+      <div class="alert" role="alert" [class.alert-warning]="classe.value == 'alert-warning'">Alerta</div>
+      <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">Erro</div>
+      <div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
+        Esse texto só aparece em caso de erro.
+      </div>
+    </div>
+  </article> -->
+  <!-- <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button class="btn btn-primary" (click)="botaoClicado()">Me clique!</button>
+      <br><br>
+
+      <input type="text" (keyup)="onKeyup($event)" (keyup.enter)="salvarValor($event.target.value)"
+        (blur)="salvarValor(campoInput.value)" #campoInput>
+      <p>Valor Atual: {{valorAtual}}</p>
+      <p>Valor Salvo: {{valorSalvo}}</p>
+      <br>
+      <span (mouseover)="onMouseOverOut()" (mouseout)="onMouseOverOut()" [class.highlight]="isMouseOver">Passe o mouse
+        sobre mim</span>
+    </div>
+  </article> -->
+  <!-- <article>
+    <h3>Two-way Data Binding</h3>
+    <div>
+      <input type="text" [value]="nome" (input)="nome = $event.target.value">
+      <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event">
+      <input type="text" [(ngModel)]="nome" name="nome">
+      <p>Voce digitou: {{nome}}</p>
+      <br>
+      <div>
+        <p>Meu nome é {{pessoa.nome}} e tenho {{pessoa.idade}} anos</p>
+        <input type="text" [(ngModel)]="pessoa.nome">
+        <input type="text" [(ngModel)]="pessoa.idade">
+      </div>
+
+    </div>
+  </article> -->
+  <article>
+    <h3>Input/Output Properties</h3>
+    <app-input-property [nome]="nomeDoCurso"></app-input-property>
+    <br>
+    <app-output-property valor="10" (mudouValor)="onMudouValor($event)"></app-output-property>
+  </article>
+
+</section>
